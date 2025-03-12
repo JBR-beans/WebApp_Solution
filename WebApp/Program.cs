@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using WebApp.Data;
 using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.Identity;
+using WebApp.Areas.Identity.Data;
 
 namespace WebApp
 {
@@ -12,8 +14,12 @@ namespace WebApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            // database, how we link up db
             builder.Services.AddDbContext<WebAppContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("WebAppContext") ?? throw new InvalidOperationException("Connection string 'WebAppContext' not found.")));
+
+            // links up identity, and links to db
+            builder.Services.AddDefaultIdentity<BlogUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<WebAppContext>();
 
             // Add services to the container.
 
@@ -38,28 +44,9 @@ namespace WebApp
 
             app.UseAuthorization();
 
-
-            app.MapControllers();
-
             
-            Category cat = new Category
-            {
-                CategoryId = 1,
-                CategoryName = "TestCategory"
-            };
-
-            Content test = new Content
-            {
-                ContentId = 1,
-                Title = "Test Content Title",
-                Body = "Test content body.",
-                Author = "Beans",
-                CreatedAt = DateTime.Now,
-                UpdatedAt = DateTime.Now,
-                CategoryId = 1
-
-            };
-
+            app.MapControllers();
+            app.MapRazorPages();
             
             app.Run();
         }
