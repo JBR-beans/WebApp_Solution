@@ -14,12 +14,14 @@ namespace WebApp
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+
             // database, how we link up db
-            builder.Services.AddDbContext<WebAppContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("WebAppContext") ?? throw new InvalidOperationException("Connection string 'WebAppContext' not found.")));
+            builder.Services.AddDbContext<WebAppDB>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("WebAppDB") ?? throw new InvalidOperationException("Connection string 'WebAppDB' not found.")));
 
             // links up identity, and links to db
-            builder.Services.AddDefaultIdentity<BlogUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<WebAppContext>();
+            builder.Services.AddDefaultIdentity<BlogUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<WebAppDB>();
 
             // Add services to the container.
 

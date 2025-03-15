@@ -11,6 +11,6 @@ namespace WebApp.Areas.Identity.Data;
 public class BlogUser : IdentityUser
 {
 
-	public virtual ICollection<Content> Posts { get; set; }
+	//public virtual ICollection<Content> Posts { get; set; }
 }
 

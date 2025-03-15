@@ -11,20 +11,22 @@ using WebApp.Models;
 
 namespace WebApp.Controllers
 {
-    [Route("api/[controller]")]
+	[Authorize]
+	[Route("api/[controller]")]
     [ApiController]
     public class ContentsController : ControllerBase
     {
-        private readonly WebAppContext _context;
+        private readonly WebAppDB _context;
 
-        public ContentsController(WebAppContext context)
+        public ContentsController(WebAppDB context)
         {
             _context = context;
         }
 
-        [Authorize]
-        // GET: api/Contents
-        [HttpGet]
+
+		// GET: api/Contents
+		[AllowAnonymous]
+		[HttpGet]
         public async Task<ActionResult<IEnumerable<Content>>> GetContent()
         {
             return await _context.Content.Include(c => c.Category).ToListAsync();

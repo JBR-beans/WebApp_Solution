@@ -7,14 +7,17 @@ namespace WebApp.Models
 {
 	public class Content
 	{
-
+		[Key]
 		public int ContentId { get; set; }
 
 		public string Title { get; set; }
 
 		public string Body { get; set; }
 
-		public string AuthorId { get; set; }
+		[ForeignKey(nameof(Author.id))]
+		public int AuthorId { get; set; }
+
+		public virtual Author Author { get; set; }
 
 		public DateTime CreatedAt { get; set; }
 
@@ -26,6 +29,7 @@ namespace WebApp.Models
 		public int CategoryId { get; set; }
 		// nav
 		public virtual Category Category { get; set; }
-		public virtual BlogUser Author { get; set; }
+
+		//public virtual BlogUser Author { get; set; }
 	}
 }
