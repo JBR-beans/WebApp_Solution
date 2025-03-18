@@ -1,1 +1,15 @@
-<p>nav works!</p>
+<ul>
+  <li>
+    <a routerLink="['']">Home</a>
+  </li>
+  <li>
+    <a routerLink="['post']">List All Posts</a>
+  </li>
+  <li>
+    <a routerLink="['post/:ID']">View Post by ID</a>
+  </li>
+  <li *ngFor="let page of staticPages">
+    <a routerLink="['post/:ID']">{{page.path}}</a>
+  </li>
+</ul>
+ 
