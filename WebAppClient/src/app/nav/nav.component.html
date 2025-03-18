@@ -1,15 +1,15 @@
 <ul>
   <li>
-    <a routerLink="['']">Home</a>
+    <a [routerLink]="['']">Home</a>
   </li>
   <li>
-    <a routerLink="['post']">List All Posts</a>
+    <a [routerLink]="['post']">List All Posts</a>
   </li>
   <li>
-    <a routerLink="['post/:ID']">View Post by ID</a>
+    <a [routerLink]="['post/1']">View Post by ID</a>
   </li>
   <li *ngFor="let page of staticPages">
-    <a routerLink="['post/:ID']">{{page.path}}</a>
+    <a [routerLink]="['post', page.slug]">{{page.displayName}}</a>
   </li>
 </ul>
  

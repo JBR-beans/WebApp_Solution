@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 interface Page {
   slug: string;
   component: Component | undefined;
-  path: string;
+  displayName: string;
 
 }
 
@@ -19,17 +19,17 @@ export class NavComponent {
     {
     slug: 'slug1',
     component: undefined,
-    path: 'post/slug1'
+    displayName: 'slug1'
     },
     {
-      slug: 'slug2',
-      component: undefined,
-      path: 'post/slug2'
-      },
-      {
-        slug: 'slug3',
-        component: undefined,
-        path: 'post/slug3'
-        },
+    slug: 'slug2',
+    component: undefined,
+    displayName: 'slug2'
+    },
+    {
+    slug: 'slug3',
+    component: undefined,
+    displayName: 'slug3'
+    }
   ];
 }
