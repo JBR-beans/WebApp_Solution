@@ -77,7 +77,9 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 51066
+            "port": 51066,
+            "ssl": true,
+            "proxyConfig": "src/proxy.conf.json"
           }
         },
         "extract-i18n": {

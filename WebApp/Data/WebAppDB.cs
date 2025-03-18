@@ -9,11 +9,13 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using WebApp.Areas.Identity.Data;
+
+//using WebApp.Areas.Identity.Data;
 using WebApp.Models;
 
 namespace WebApp.Data
 {
-    public class WebAppDB : DbContext
+    public class WebAppDB : IdentityDbContext<BlogUser>
     {
         public WebAppDB (DbContextOptions<WebAppDB> options)
             : base(options)
