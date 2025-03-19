@@ -8,6 +8,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
 import { NavComponent } from './nav/nav.component';
 import { DataService } from './data.service';
+import { HttpClient, withInterceptorsFromDi, provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DataService } from './data.service';
     AppRoutingModule
   ],
   providers: [
-    DataService
+    DataService,
+    provideHttpClient(withInterceptorsFromDi())
   ],
   bootstrap: [AppComponent]
 })

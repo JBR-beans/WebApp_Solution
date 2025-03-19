@@ -1,4 +1,4 @@
-import { Component, numberAttribute } from '@angular/core';
+import { Component, numberAttribute, OnInit } from '@angular/core';
 import { DataService, Page } from '../data.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './post-detail.component.html',
   styleUrl: './post-detail.component.css'
 })
-export class PostDetailComponent {
+export class PostDetailComponent implements OnInit{
   id: number = 0;
   post: Page | undefined;
 
@@ -33,19 +33,11 @@ export class PostDetailComponent {
         },
         Visibility: 0
       };
-    
-    this.initComponent();
-
   }
-
-  initComponent() {
+  ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.id = Number(params.get("id"));
       this.post = this.data.pages.find(p => p.ContentId == this.id);
     });
-    //this.id = Number(this.route.snapshot.paramMap.get('id'));
-    //let page = this.data.pages.find(p => p.ContentId == this.id);
   }
-
-
 }
