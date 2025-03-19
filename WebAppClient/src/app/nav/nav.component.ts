@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 interface PageLink {
-  slug: string;
+  id: number;
   component: Component | undefined;
-  displayName: string;
+  slug: string;
 
 }
 
@@ -17,19 +17,19 @@ interface PageLink {
 export class NavComponent {
   staticPages: PageLink[] = [
     {
-    slug: 'slug1',
+    id: 1,
     component: undefined,
-    displayName: 'slug1'
+    slug: 'post-slug1'
     },
     {
-    slug: 'slug2',
+    id: 2,
     component: undefined,
-    displayName: 'slug2'
+    slug: 'post-slug2'
     },
     {
-    slug: 'slug3',
+    id: 3,
     component: undefined,
-    displayName: 'slug3'
+    slug: 'post-slug3'
     }
   ];
 }

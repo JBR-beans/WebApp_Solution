@@ -9,7 +9,7 @@
     <a [routerLink]="['post/1']">View Post by ID</a>
   </li>
   <li *ngFor="let page of staticPages">
-    <a [routerLink]="['post', page.slug]">{{page.displayName}}</a>
+    <a [routerLink]="['post', page.id]">{{page.slug}}</a>
   </li>
 </ul>
  
