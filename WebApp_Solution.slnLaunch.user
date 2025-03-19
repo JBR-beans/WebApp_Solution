@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "WebApp\\WebApp.csproj",
+        "Action": "StartWithoutDebugging",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "WebAppClient\\WebAppClient.esproj",
+        "Action": "Start",
+        "DebugTarget": "localhost (Edge)"
+      }
+    ]
+  }
+]

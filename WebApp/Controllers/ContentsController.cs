@@ -11,7 +11,7 @@ using WebApp.Models;
 
 namespace WebApp.Controllers
 {
-	[Authorize]
+	
 	[Route("api/[controller]")]
     [ApiController]
     public class ContentsController : ControllerBase

@@ -3,20 +3,7 @@
   "WorkspaceRootPath": "C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\WebApp\\Migrations\\20250318234347_AddedSlug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebApp\\Migrations\\20250318234347_AddedSlug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B98BFD9-9C83-472B-A01D-68B56CFB9ADE}|WebApp\\WebApp.csproj|c:\\active development\\software lab\\webappapitests\\webapp_solution\\webapp\\data\\webappdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B98BFD9-9C83-472B-A01D-68B56CFB9ADE}|WebApp\\WebApp.csproj|solutionrelative:webapp\\data\\webappdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B98BFD9-9C83-472B-A01D-68B56CFB9ADE}|WebApp\\WebApp.csproj|c:\\active development\\software lab\\webappapitests\\webapp_solution\\webapp\\models\\content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B98BFD9-9C83-472B-A01D-68B56CFB9ADE}|WebApp\\WebApp.csproj|solutionrelative:webapp\\models\\content.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9DE584A4-5FFD-7816-CB3E-551AFA50DC71}|WebAppClient\\WebAppClient.esproj|c:\\active development\\software lab\\webappapitests\\webapp_solution\\webappclient\\src\\app\\nav\\nav.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9DE584A4-5FFD-7816-CB3E-551AFA50DC71}|WebAppClient\\WebAppClient.esproj|solutionrelative:webappclient\\src\\app\\nav\\nav.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppDB/True/SqlTable/dbo.Content.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,47 +13,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 246,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20250318234347_AddedSlug.cs",
-              "DocumentMoniker": "C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\WebApp\\Migrations\\20250318234347_AddedSlug.cs",
-              "RelativeDocumentMoniker": "WebApp\\Migrations\\20250318234347_AddedSlug.cs",
-              "ToolTip": "C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\WebApp\\Migrations\\20250318234347_AddedSlug.cs",
-              "RelativeToolTip": "WebApp\\Migrations\\20250318234347_AddedSlug.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T23:43:47.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WebAppDB.cs",
-              "DocumentMoniker": "C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\WebApp\\Data\\WebAppDB.cs",
-              "RelativeDocumentMoniker": "WebApp\\Data\\WebAppDB.cs",
-              "ToolTip": "C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\WebApp\\Data\\WebAppDB.cs",
-              "RelativeToolTip": "WebApp\\Data\\WebAppDB.cs",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAYwJ8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T23:43:18.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Content.cs",
-              "DocumentMoniker": "C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\WebApp\\Models\\Content.cs",
-              "RelativeDocumentMoniker": "WebApp\\Models\\Content.cs",
-              "ToolTip": "C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\WebApp\\Models\\Content.cs",
-              "RelativeToolTip": "WebApp\\Models\\Content.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T23:41:39.847Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -93,15 +41,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "nav.component.html",
-              "DocumentMoniker": "C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\WebAppClient\\src\\app\\nav\\nav.component.html",
-              "RelativeDocumentMoniker": "WebAppClient\\src\\app\\nav\\nav.component.html",
-              "ToolTip": "C:\\Active Development\\Software Lab\\WebAppAPITests\\WebApp_Solution\\WebAppClient\\src\\app\\nav\\nav.component.html",
-              "RelativeToolTip": "WebAppClient\\src\\app\\nav\\nav.component.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-18T22:16:46.222Z",
+              "DocumentIndex": 0,
+              "Title": "dbo.Content [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/WebAppDB/True/SqlTable/dbo.Content.sql",
+              "ToolTip": "dbo.Content [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-19T03:57:05.145Z",
               "EditorCaption": ""
             }
           ]
