@@ -9,7 +9,8 @@ export interface Category {
 }
 
 export interface Page {
-  ContentId: number;
+  contentId: number;
+  slug: string,
   Title: string;
   Body: string;
   AuthorId: string;
@@ -31,7 +32,8 @@ export class DataService {
   constructor(private _http: HttpClient) {
     this.pages = [
       {
-        ContentId: 1,
+        contentId: 1,
+        slug: "slug1",
       Title: 'new page 1',
       Body: 'this is a new page',
       AuthorId: 'author1',
@@ -47,7 +49,8 @@ export class DataService {
       }
       },
       {
-        ContentId: 2,
+        contentId: 2,
+        slug: "slug2",
       Title: 'new page 2',
       Body: 'this is a new page',
       AuthorId: 'author2',
@@ -63,7 +66,8 @@ export class DataService {
       }
       },
       {
-        ContentId: 3,
+        contentId: 3,
+        slug: "slug3",
       Title: 'new page3',
       Body: 'this is a new page',
       AuthorId: 'author3',

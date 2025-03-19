@@ -1,6 +1,5 @@
-<ul>
+<ul *ngIf="pages">
   <li *ngFor="let page of pages">
     <pre> {{page | json}}</pre>
-
-  </li> 
+  </li>
 </ul>

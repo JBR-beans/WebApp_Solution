@@ -1,15 +1,9 @@
-<ul>
-  <li>
-    <a [routerLink]="['']">Home</a>
-  </li>
-  <li>
-    <a [routerLink]="['post']">List All Posts</a>
-  </li>
-  <li>
-    <a [routerLink]="['post/1']">View Post by ID</a>
-  </li>
-  <li *ngFor="let page of staticPages">
-    <a [routerLink]="['post', page.id]">{{page.slug}}</a>
-  </li>
-</ul>
- 
+
+  <a [routerLink]="['']"><h3>Home</h3></a>
+
+  <a [routerLink]="['post']"><h3>List All Posts</h3></a>
+
+<h3>Show Single Post</h3>
+<li *ngFor="let page of pages">
+  <a [routerLink]="['post', page.contentId]">{{page.slug}}</a>
+</li>

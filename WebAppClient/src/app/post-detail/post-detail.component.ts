@@ -18,7 +18,8 @@ export class PostDetailComponent implements OnInit{
 
       this.id = 1;
       this.post = {
-        ContentId: 0,
+        contentId: 0,
+        slug: "",
         AuthorId: "",
         Author: "",
         Title: "",
@@ -32,12 +33,16 @@ export class PostDetailComponent implements OnInit{
           PostedContent: []
         },
         Visibility: 0
-      };
+    };
+
+    
   }
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
       this.id = Number(params.get("id"));
-      this.post = this.data.pages.find(p => p.ContentId == this.id);
+      this.post = this.data.pages.find(p => p.contentId == this.id);
     });
   }
+
+  
 }

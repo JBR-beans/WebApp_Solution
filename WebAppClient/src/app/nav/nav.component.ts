@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-
-interface PageLink {
-  id: number;
-  component: Component | undefined;
-  slug: string;
-
-}
-
+import { DataService, Page } from '../data.service';
 
 @Component({
   selector: 'app-nav',
@@ -15,21 +8,12 @@ interface PageLink {
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-  staticPages: PageLink[] = [
-    {
-    id: 1,
-    component: undefined,
-    slug: 'post-slug1'
-    },
-    {
-    id: 2,
-    component: undefined,
-    slug: 'post-slug2'
-    },
-    {
-    id: 3,
-    component: undefined,
-    slug: 'post-slug3'
-    }
-  ];
+  pages: Page[] = [];
+  
+  constructor(private data: DataService) {
+    this.data.getAllPages().subscribe(data => {
+      this.pages = data;
+      console.log(this.pages);
+    });
+  }
 }
