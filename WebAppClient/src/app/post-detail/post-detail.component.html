@@ -1,2 +1,9 @@
-<pre> {{post | json}}</pre>
+{{ page | json }}
+@let pageData = page | async;
+
+<div class="post-details" *ngIf="pageData">
+  <h1>{{ pageData.Title }}</h1>
+  <h3>Updated At: {{ pageData.UpdatedAt | date:"fullDate"}}</h3>
+  <p>{{ pageData.Body }}</p>
+</div>
 

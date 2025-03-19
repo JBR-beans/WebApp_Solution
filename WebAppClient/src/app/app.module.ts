@@ -11,6 +11,7 @@ import { DataService } from './data.service';
 import { HttpClient, withInterceptorsFromDi, provideHttpClient } from '@angular/common/http';
 import { PostItemComponent } from './post-item/post-item.component';
 import { PostEditComponent } from './post-edit/post-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PostEditComponent } from './post-edit/post-edit.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [
     DataService,

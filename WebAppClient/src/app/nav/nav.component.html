@@ -1,9 +1,10 @@
-
-  <a [routerLink]="['']"><h3>Home</h3></a>
-
-  <a [routerLink]="['post']"><h3>List All Posts</h3></a>
-
-<h3>Show Single Post</h3>
-<li *ngFor="let page of pages">
-  <a [routerLink]="['post', page.contentId]">{{page.slug}}</a>
-</li>
+<ul>
+  <li><a [routerLink]="['']">Home</a></li>
+  <li><a [routerLink]="['post']">List Posts</a></li>
+<!--  <li *ngFor="let page of staticPages">
+    <a [routerLink]="['post', page.id]">{{ page.displayName }}</a>
+  </li>-->
+  <li>
+    <a [routerLink]="['post', 'create']" class="btn btn-sm btn-primary">Create New</a>
+  </li>
+</ul>

@@ -8,8 +8,8 @@ import { DataService, Page } from '../data.service';
 })
 export class PostItemComponent {
 
+
   @Input() page!: Page;
-  @Output() deletePage = new EventEmitter<number>();
 
   constructor(private data: DataService) { }
   onDelete() {

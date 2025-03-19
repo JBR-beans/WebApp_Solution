@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
-import { DataService, Page } from '../data.service';
+import { Component } from "@angular/core";
+import { DataService, Page } from "../data.service";
+interface PageLink {
+  id: number;
+  component: Component | undefined;
+  displayName: string;
+}
 
 @Component({
   selector: 'app-nav',
@@ -7,12 +12,31 @@ import { DataService, Page } from '../data.service';
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
+
+
+
 export class NavComponent {
-  pages: Page[] = [];
-  
-  constructor(private data: DataService) {
-/*    this.data.getAllPages().subscribe(data => {
-      this.pages = data;
-    });*/
-  }
+
+/*  staticPages: PageLink[] = [
+    {
+      id: 1,
+      component: undefined,
+      displayName: 'Taco News'
+    },
+    {
+      id: 2,
+      component: undefined,
+      displayName: 'Toast News'
+    },
+    {
+      id: 3,
+      component: undefined,
+      displayName: 'Hello'
+    },
+    {
+      id: 4,
+      component: undefined,
+      displayName: 'Hello World'
+    }
+  ];*/
 }

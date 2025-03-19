@@ -1,6 +1,1 @@
-<ul *ngIf="pages">
-  <li *ngFor="let page of pages">
-    <pre> {{page | json}}</pre>
-  </li>
-</ul>
-<app-post-item></app-post-item>
+<app-post-item *ngFor="let page of (pages | async)" [page]="page"></app-post-item>

@@ -12,7 +12,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class PostDetailComponent implements OnInit {
   id: number = 0;
-  post: BehaviorSubject<Page | undefined> = new BehaviorSubject<Page | undefined>(undefined);
+  page: BehaviorSubject<Page | undefined> = new BehaviorSubject<Page | undefined>(undefined);
 
   isLoaded: boolean = false;
 
@@ -21,7 +21,7 @@ export class PostDetailComponent implements OnInit {
     private router: Router) {
 
     this.id = 0;
-    this.post = this.data.selectedPage$;
+    this.page = this.data.selectedPage$;
 
   }
 

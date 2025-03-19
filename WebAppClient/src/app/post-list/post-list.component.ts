@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { DataService, Page } from '../data.service';
+import { Component } from "@angular/core";
+import { DataService, Page } from "../data.service";
+import { BehaviorSubject } from "rxjs";
 
 @Component({
   selector: 'app-post-list',
@@ -8,10 +9,10 @@ import { DataService, Page } from '../data.service';
   styleUrl: './post-list.component.css'
 })
 export class PostListComponent {
-pages: Page[] = [];
+  pages: BehaviorSubject<Page[]> = new BehaviorSubject<Page[]>([]);
 
   constructor(private data: DataService) {
     this.data.getAllPages();
-    this.pages = this.data.pages;
+    this.pages = this.data.pages$;
   }
 }
