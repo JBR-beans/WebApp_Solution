@@ -13,7 +13,7 @@ const routes: Routes = [
     path: "post", component: PostListComponent
   },
   {
-    path: "post/:slug", component: PostDetailComponent
+    path: "post/:id", component: PostDetailComponent
   }
 
 ]
