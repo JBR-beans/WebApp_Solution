@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-interface Page {
+interface PageLink {
   slug: string;
   component: Component | undefined;
   displayName: string;
@@ -15,7 +15,7 @@ interface Page {
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-  staticPages: Page[] = [
+  staticPages: PageLink[] = [
     {
     slug: 'slug1',
     component: undefined,

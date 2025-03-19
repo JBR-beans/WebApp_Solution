@@ -120,6 +120,7 @@ namespace WebApp.Data
 			{
 				ContentId = 1,
 				AuthorId = 1,
+				Slug = "slug1",
 				Title = "First Post",
 				Body = "Lorem ipsum and stuff",
 				CreatedAt = new DateTime(2025, 02, 03),
@@ -131,6 +132,7 @@ namespace WebApp.Data
 				{
 					ContentId = 2,
 					AuthorId = 2,
+					Slug = "slug2",
 					Title = "Second Post",
 					Body = "Lorem ipsum and stuff x2",
 					CreatedAt = new DateTime(2025, 02, 03),
@@ -142,6 +144,7 @@ namespace WebApp.Data
 				{
 					ContentId = 3,
 					AuthorId = 3,
+					Slug = "slug3",
 					Title = "Third Post",
 					Body = "Lorem ipsum and stuff, :3",
 					CreatedAt = new DateTime(2025, 02, 03),

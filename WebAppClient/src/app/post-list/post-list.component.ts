@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-post-list',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './post-list.component.css'
 })
 export class PostListComponent {
-
+constructor(private data: DataService){
+  
+}
 }
