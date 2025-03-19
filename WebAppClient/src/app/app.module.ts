@@ -9,6 +9,8 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
 import { NavComponent } from './nav/nav.component';
 import { DataService } from './data.service';
 import { HttpClient, withInterceptorsFromDi, provideHttpClient } from '@angular/common/http';
+import { PostItemComponent } from './post-item/post-item.component';
+import { PostEditComponent } from './post-edit/post-edit.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { HttpClient, withInterceptorsFromDi, provideHttpClient } from '@angular/
     HomeComponent,
     PostListComponent,
     PostDetailComponent,
-    NavComponent
+    NavComponent,
+    PostItemComponent,
+    PostEditComponent
   ],
   imports: [
     BrowserModule,

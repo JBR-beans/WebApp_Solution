@@ -1,0 +1,33 @@
+<pre>{{ page | json }}</pre>
+<pre>Editing: {{ isEditing }}</pre>
+<div *ngIf="!isLoaded" class="spinner-border" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+<div *ngIf="isLoaded">
+  <h1>Edit {{ page.Title }}</h1>
+
+  <form [formGroup]="pageForm">
+
+    <div class="mb-3">
+      <label for="Title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="Title" formControlName="Title">
+    </div>
+
+    <div class="mb-3">
+      <label for="Body" class="form-label">Body</label>
+      <textarea class="form-control" id="Body" rows="5" formControlName="Body"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label for="Visibility" class="form-label">Visibility</label>
+      <input type="text" class="form-control" id="Visibility" formControlName="Visibility">
+    </div>
+
+    <div class="btn-group">
+      <button (click)="onClear()" class="btn btn-danger">Clear</button>
+      <button (click)="onSave()" class="btn btn-primary">Save</button>
+    </div>
+  </form>
+</div>
+

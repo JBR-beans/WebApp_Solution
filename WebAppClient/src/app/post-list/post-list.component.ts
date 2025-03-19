@@ -11,8 +11,7 @@ export class PostListComponent {
 pages: Page[] = [];
 
   constructor(private data: DataService) {
-    this.data.getAllPages().subscribe(data => {
-      this.pages = data;
-    });
+    this.data.getAllPages();
+    this.pages = this.data.pages;
   }
 }

@@ -1,0 +1,16 @@
+{{ page | json }}
+<div class="post-item m-2 mb-4 bg-light p-2 border border-info">
+  <h3>{{ page.Title }}</h3>
+  <h5>Updated At: {{ page.UpdatedAt | date:'fullDate' }}</h5>
+  <div class="post-controls btn-group">
+    <button class="btn btn-sm btn-danger" (click)="onDelete()">Delete</button><br />
+    <button class="btn btn-sm btn-success" [routerLink]="['/post', 'edit', page.contentId]">Edit</button>
+  </div>
+  <p>
+    {{ page.Body }}
+  </p>
+  <ul>
+    <li>{{ page.Category.CategoryName }}</li>
+  </ul>
+  <a class="btn btn-primary" [routerLink]="['/post', page.contentId]">Details</a>
+</div>

@@ -11,9 +11,8 @@ export class NavComponent {
   pages: Page[] = [];
   
   constructor(private data: DataService) {
-    this.data.getAllPages().subscribe(data => {
+/*    this.data.getAllPages().subscribe(data => {
       this.pages = data;
-      console.log(this.pages);
-    });
+    });*/
   }
 }
